@@ -14,10 +14,11 @@
       height: 100%;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
       background: linear-gradient(135deg, #016b6b 0%, #02a0a0 50%, #c5eded 100%);
       overflow-x: hidden;
       overflow-y: auto;
+      padding-top: 40px;
     }
 
     @keyframes fadeInScale { from {opacity:0; transform:scale(0.95);} to {opacity:1; transform:scale(1);} }
@@ -25,9 +26,9 @@
     @keyframes pulse { 0%,100%{box-shadow:0 0 0 0 rgba(2,160,160,0.7);}50%{box-shadow:0 0 0 10px rgba(2,160,160,0);} }
 
     .container {
-      width: 100%;
-      max-width: 420px;
-      padding: 40px 24px;
+      width: 90%;
+      max-width: 320px;
+      padding: 40px 20px;
       text-align: center;
       background: rgba(255,255,255,0.12);
       border-radius: 24px;
@@ -35,16 +36,19 @@
       border: 1px solid rgba(255,255,255,0.2);
       animation: fadeInScale 0.6s ease-out;
       box-shadow: 0 20px 60px rgba(0,0,0,0.15);
-      margin: 20px;
+      margin: 40px auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
-    .logo-container { margin-bottom:20px; animation: float 3s ease-in-out infinite; }
-    .logo img { width: 70px; height: 70px; border-radius: 50%; }
+    .logo-container { margin-bottom: 20px; animation: float 3s ease-in-out infinite; }
+    .logo img { width: 100px; height: 100px; border-radius: 50%; }
 
-    h1 { margin:15px 0 10px; font-size:28px; color:#ffffff; font-weight:700; letter-spacing:0.5px; }
+    h1 { margin: 15px 0 10px; font-size:28px; color:#ffffff; font-weight:700; letter-spacing:0.5px; }
     .subtitle { font-size:14px; color:rgba(255,255,255,0.85); margin-bottom:30px; font-weight:400; line-height:1.6; }
 
-    .links-container { display:flex; flex-direction:column; gap:12px; }
+    .links-container { display:flex; flex-direction:column; gap:12px; width: 100%; }
     .link {
       text-decoration:none;
       color:#ffffff;
@@ -84,7 +88,7 @@
     .text { flex:1; text-align:right; }
 
     @media (max-width:480px){
-      .container { max-width:100%; margin:16px; padding:30px 20px; }
+      .container { max-width:100%; margin:20px; padding:30px 20px; }
       h1 { font-size:24px; }
       .link { padding:14px 18px; }
     }
@@ -120,15 +124,14 @@
       link1_url: "https://www.albarkah.org/profile-request/",
       link2_url: "https://drive.google.com/file/d/1CgMJ3AX6PQDpAaiRRuirkCuKBSAeJ9t-/view?usp=drive_link",
       background_color: "#016b6b",
-      surface_color: "#ffffff",
-      text_color: "#ffffff",
       primary_action: "#02a0a0",
       secondary_action: "#c5eded",
+      text_color: "#ffffff",
       font_family: "Tajawal",
       font_size: 16
     };
 
-    async function onConfigChange(config) {
+    function onConfigChange(config) {
       document.getElementById('org-name').textContent = config.organization_name || defaultConfig.organization_name;
       document.getElementById('subtitle').textContent = config.subtitle_text || defaultConfig.subtitle_text;
       document.getElementById('link1').textContent = config.link1_text || defaultConfig.link1_text;
@@ -139,7 +142,6 @@
       links[1].href = config.link2_url || defaultConfig.link2_url;
 
       document.body.style.background = `linear-gradient(135deg, ${config.background_color || defaultConfig.background_color} 0%, ${config.primary_action || defaultConfig.primary_action} 50%, ${config.secondary_action || defaultConfig.secondary_action} 100%)`;
-
       document.querySelectorAll('h1, .subtitle, .link').forEach(el => el.style.color = config.text_color || defaultConfig.text_color);
       document.body.style.fontFamily = `${config.font_family || defaultConfig.font_family}, 'Segoe UI', system-ui, sans-serif`;
     }
