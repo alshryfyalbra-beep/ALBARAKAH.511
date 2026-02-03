@@ -36,24 +36,25 @@ html, body {
   text-align: center;
 }
 
-/* ===== إطار الشعار (ثابت) ===== */
+/* ===== إطار الشعار (أبيض خفيف جدًا) ===== */
 .logo {
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  background: #ffffff;
+  background: rgba(255,255,255,0.95); /* أخف */
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 18px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  border: 1px solid rgba(0,0,0,0.06); /* إطار نحيف جدًا */
+  box-shadow: 0 3px 10px rgba(0,0,0,0.12);
 }
 
 /* ===== الشعار نفسه (مصغّر وغير مقصوص) ===== */
 .logo img {
-  width: 65%;          /* ← هذا المهم */
+  width: 65%;
   height: auto;
-  object-fit: contain; /* يضمن عدم القص */
+  object-fit: contain;
   display: block;
 }
 
@@ -120,6 +121,7 @@ h1 {
   .logo {
     width: 80px;
     height: 80px;
+    border-width: 1px;
   }
 
   .logo img {
