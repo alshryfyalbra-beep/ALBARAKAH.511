@@ -52,7 +52,7 @@ html, body {
 
 /* ===== الشعار نفسه (مصغّر وغير مقصوص) ===== */
 .logo img {
-  width: 65%;
+  width: 50%;
   height: auto;
   object-fit: contain;
   display: block;
