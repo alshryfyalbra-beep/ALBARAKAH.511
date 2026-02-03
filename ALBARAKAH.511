@@ -1,8 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>جمعية البركة الخيرية</title>
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
@@ -16,9 +16,6 @@
       justify-content: center;
       align-items: center;
     }
-
-    @keyframes fadeInScale { from {opacity:0; transform:scale(0.95);} to {opacity:1; transform:scale(1);} }
-    @keyframes float { 0%,100%{transform:translateY(0px);}50%{transform:translateY(-10px);} }
 
     .container {
       width: 90%;
@@ -34,97 +31,61 @@
       backdrop-filter: blur(15px);
       border: 1px solid rgba(255,255,255,0.2);
       box-shadow: 0 20px 60px rgba(0,0,0,0.15);
-      animation: fadeInScale 0.6s ease-out;
+      text-align: center;
     }
 
-    .logo-container { margin-bottom: 30px; animation: float 3s ease-in-out infinite; }
     .logo {
       width: 120px;
       height: 120px;
       border-radius: 50%;
-      background: #ffffff; /* خلفية بيضاء للشعار الشفاف */
+      background: #ffffff; /* خلفية بيضاء للشعار */
       display: flex;
       justify-content: center;
       align-items: center;
       padding: 10px;
+      margin-bottom: 30px;
       box-shadow: 0 5px 20px rgba(0,0,0,0.15);
     }
+
     .logo img {
       width: 100%;
       height: 100%;
-      object-fit: contain; /* يحافظ على نسبة الصورة */
+      object-fit: contain;
       border-radius: 50%;
     }
 
-    h1 { margin: 15px 0 10px; font-size:28px; color:#ffffff; font-weight:700; letter-spacing:0.5px; text-align:center; }
-    .subtitle { font-size:14px; color:rgba(255,255,255,0.85); margin-bottom:40px; font-weight:400; line-height:1.6; text-align:center; }
+    h1 {
+      font-size: 28px;
+      color: #ffffff;
+      font-weight: 700;
+      margin: 0 0 10px 0;
+    }
 
-    .links-container { display:flex; flex-direction:column; gap:16px; width: 100%; }
+    .subtitle {
+      font-size: 14px;
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 40px;
+      font-weight: 400;
+      line-height: 1.6;
+    }
+
+    .links-container {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 100%;
+    }
+
     .link {
-      text-decoration:none;
-      color:#ffffff;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 18px 20px;
+      border-radius: 14px;
+      font-size: 16px;
+      font-weight: 500;
+      text-decoration: none;
+      color: #ffffff;
       background: rgba(255,255,255,0.15);
-      padding:18px 20px;
-      border-radius:14px;
-      font-size:16px;
-      font-weight:500;
-      border:1px solid rgba(255,255,255,0.2);
-      transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
-      display:flex;
-      align-items:center;
-      gap:14px;
-      cursor:pointer;
-    }
-    .link:hover {
-      background: rgba(255,255,255,0.25);
-      transform: translateY(-6px);
-      box-shadow: 0 15px 35px rgba(0,0,0,0.2);
-      border:1px solid rgba(255,255,255,0.35);
-    }
-    .link:active { transform: translateY(-2px); }
-
-    .icon-box {
-      width:45px;
-      height:45px;
-      background: rgba(255,255,255,0.25);
-      border-radius:10px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      font-size:22px;
-      flex-shrink:0;
-      transition: all 0.3s ease;
-    }
-    .link:hover .icon-box { background: rgba(255,255,255,0.4); transform: scale(1.1); }
-    .text { flex:1; text-align:right; }
-
-    @media (max-width:480px){
-      .container { max-width:100%; padding:30px 20px; }
-      h1 { font-size:24px; }
-      .link { padding:16px 18px; font-size:15px; }
-      .logo { width:100px; height:100px; }
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="logo-container">
-      <div class="logo">
-        <img src="https://i.ibb.co/qMStJd7d/logo.png" alt="جمعية البركة الخيرية">
-      </div>
-    </div>
-    <h1 id="org-name">جمعية البركة الخيرية</h1>
-    <p class="subtitle" id="subtitle">نسعد بخدمتكم</p>
-    <div class="links-container">
-      <a href="https://www.albarkah.org/profile-request/" target="_blank" rel="noopener noreferrer" class="link">
-        <div class="icon-box">📝</div>
-        <div class="text" id="link1">طلب تسجيل مستفيد جديد</div>
-      </a>
-      <a href="https://drive.google.com/file/d/1CgMJ3AX6PQDpAaiRRuirkCuKBSAeJ9t-/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="link">
-        <div class="icon-box">📄</div>
-        <div class="text" id="link2">طريقة استخراج الوثائق</div>
-      </a>
-    </div>
-  </div>
-</body>
-</html>
+      border: 1px solid rgba(255,255,255,0.2);
+      transition: all 0.35s cubic-bezie
