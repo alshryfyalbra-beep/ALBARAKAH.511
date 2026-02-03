@@ -19,16 +19,15 @@
 
     @keyframes fadeInScale { from {opacity:0; transform:scale(0.95);} to {opacity:1; transform:scale(1);} }
     @keyframes float { 0%,100%{transform:translateY(0px);}50%{transform:translateY(-10px);} }
-    @keyframes pulse { 0%,100%{box-shadow:0 0 0 0 rgba(2,160,160,0.7);}50%{box-shadow:0 0 0 10px rgba(2,160,160,0);} }
 
     .container {
       width: 90%;
       max-width: 360px;
-      height: 100%;           /* يملأ كامل ارتفاع الشاشة */
+      height: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center; /* يوسّط المحتوى طولياً */
+      justify-content: center;
       padding: 40px 20px;
       background: rgba(255,255,255,0.12);
       border-radius: 24px;
@@ -43,7 +42,7 @@
       width: 120px;
       height: 120px;
       border-radius: 50%;
-      background: #ffffff;   /* خلفية بيضاء للوجو الشفاف */
+      background: #ffffff; /* خلفية بيضاء للوجو */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -97,62 +96,3 @@
     @media (max-width:480px){
       .container { max-width:100%; padding:30px 20px; }
       h1 { font-size:24px; }
-      .link { padding:16px 18px; font-size:15px; }
-      .logo { width:100px; height:100px; }
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="logo-container">
-      <div class="logo">
-        <img src="https://drive.google.com/uc?export=view&id=19_3FiyicRfmQt3HSVJFLGfnTV97Us2Ot" alt="جمعية البركة الخيرية">
-      </div>
-    </div>
-    <h1 id="org-name">جمعية البركة الخيرية</h1>
-    <p class="subtitle" id="subtitle">نسعد بخدمتكم</p>
-    <div class="links-container">
-      <a href="https://www.albarkah.org/profile-request/" target="_blank" rel="noopener noreferrer" class="link">
-        <div class="icon-box">📝</div>
-        <div class="text" id="link1">طلب تسجيل مستفيد جديد</div>
-      </a>
-      <a href="https://drive.google.com/file/d/1CgMJ3AX6PQDpAaiRRuirkCuKBSAeJ9t-/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="link">
-        <div class="icon-box">📄</div>
-        <div class="text" id="link2">طريقة استخراج الوثائق</div>
-      </a>
-    </div>
-  </div>
-
-  <script>
-    const defaultConfig = {
-      organization_name: "جمعية البركة الخيرية",
-      subtitle_text: "نسعد بخدمتكم",
-      link1_text: "طلب تسجيل مستفيد جديد",
-      link2_text: "طريقة استخراج الوثائق",
-      link1_url: "https://www.albarkah.org/profile-request/",
-      link2_url: "https://drive.google.com/file/d/1CgMJ3AX6PQDpAaiRRuirkCuKBSAeJ9t-/view?usp=drive_link",
-      background_color: "#016b6b",
-      primary_action: "#02a0a0",
-      secondary_action: "#c5eded",
-      text_color: "#ffffff",
-      font_family: "Tajawal",
-      font_size: 16
-    };
-
-    function onConfigChange(config) {
-      document.getElementById('org-name').textContent = config.organization_name || defaultConfig.organization_name;
-      document.getElementById('subtitle').textContent = config.subtitle_text || defaultConfig.subtitle_text;
-      document.getElementById('link1').textContent = config.link1_text || defaultConfig.link1_text;
-      document.getElementById('link2').textContent = config.link2_text || defaultConfig.link2_text;
-
-      const links = document.querySelectorAll('.links-container a');
-      links[0].href = config.link1_url || defaultConfig.link1_url;
-      links[1].href = config.link2_url || defaultConfig.link2_url;
-
-      document.body.style.background = `linear-gradient(135deg, ${config.background_color || defaultConfig.background_color} 0%, ${config.primary_action || defaultConfig.primary_action} 50%, ${config.secondary_action || defaultConfig.secondary_action} 100%)`;
-      document.querySelectorAll('h1, .subtitle, .link').forEach(el => el.style.color = config.text_color || defaultConfig.text_color);
-      document.body.style.fontFamily = `${config.font_family || defaultConfig.font_family}, 'Segoe UI', system-ui, sans-serif`;
-    }
-  </script>
-</body>
-</html>
