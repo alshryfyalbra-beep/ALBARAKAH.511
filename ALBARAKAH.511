@@ -42,14 +42,19 @@
       width: 120px;
       height: 120px;
       border-radius: 50%;
-      background: #ffffff; /* خلفية بيضاء للوجو */
+      background: #ffffff; /* خلفية بيضاء للشعار الشفاف */
       display: flex;
       justify-content: center;
       align-items: center;
       padding: 10px;
       box-shadow: 0 5px 20px rgba(0,0,0,0.15);
     }
-    .logo img { width: 100%; height: 100%; object-fit: contain; border-radius: 50%; }
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; /* يحافظ على نسبة الصورة */
+      border-radius: 50%;
+    }
 
     h1 { margin: 15px 0 10px; font-size:28px; color:#ffffff; font-weight:700; letter-spacing:0.5px; text-align:center; }
     .subtitle { font-size:14px; color:rgba(255,255,255,0.85); margin-bottom:40px; font-weight:400; line-height:1.6; text-align:center; }
@@ -96,3 +101,30 @@
     @media (max-width:480px){
       .container { max-width:100%; padding:30px 20px; }
       h1 { font-size:24px; }
+      .link { padding:16px 18px; font-size:15px; }
+      .logo { width:100px; height:100px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo-container">
+      <div class="logo">
+        <img src="https://i.ibb.co/qMStJd7d/logo.png" alt="جمعية البركة الخيرية">
+      </div>
+    </div>
+    <h1 id="org-name">جمعية البركة الخيرية</h1>
+    <p class="subtitle" id="subtitle">نسعد بخدمتكم</p>
+    <div class="links-container">
+      <a href="https://www.albarkah.org/profile-request/" target="_blank" rel="noopener noreferrer" class="link">
+        <div class="icon-box">📝</div>
+        <div class="text" id="link1">طلب تسجيل مستفيد جديد</div>
+      </a>
+      <a href="https://drive.google.com/file/d/1CgMJ3AX6PQDpAaiRRuirkCuKBSAeJ9t-/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="link">
+        <div class="icon-box">📄</div>
+        <div class="text" id="link2">طريقة استخراج الوثائق</div>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
