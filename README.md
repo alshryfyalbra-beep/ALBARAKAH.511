@@ -36,24 +36,25 @@ html, body {
   text-align: center;
 }
 
-/* ===== الشعار (صغير جدًا) ===== */
+/* ===== إطار الشعار (ثابت) ===== */
 .logo {
-  width: 64px;
-  height: 64px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   background: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 16px;
-  padding: 6px;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+  margin-bottom: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 }
 
+/* ===== الشعار نفسه (مصغّر وغير مقصوص) ===== */
 .logo img {
-  width: 80%;
-  height: 80%;
-  object-fit: contain;
+  width: 65%;          /* ← هذا المهم */
+  height: auto;
+  object-fit: contain; /* يضمن عدم القص */
+  display: block;
 }
 
 /* ===== العناوين ===== */
@@ -68,7 +69,6 @@ h1 {
   font-size: 14px;
   color: rgba(255,255,255,0.85);
   margin-bottom: 34px;
-  font-weight: 400;
 }
 
 /* ===== الروابط ===== */
@@ -97,7 +97,6 @@ h1 {
 .link:hover {
   background: rgba(255,255,255,0.25);
   transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
 .icon-box {
@@ -109,7 +108,6 @@ h1 {
   justify-content: center;
   align-items: center;
   font-size: 22px;
-  flex-shrink: 0;
 }
 
 .text {
@@ -119,34 +117,22 @@ h1 {
 
 /* ===== الجوال ===== */
 @media (max-width: 480px) {
-  .container {
-    max-width: 100%;
-    padding: 30px 18px;
+  .logo {
+    width: 80px;
+    height: 80px;
   }
 
-  .logo {
-    width: 56px;
-    height: 56px;
+  .logo img {
+    width: 60%;
   }
 
   h1 {
     font-size: 22px;
   }
 
-  .subtitle {
-    font-size: 13px;
-    margin-bottom: 28px;
-  }
-
   .link {
     padding: 15px 16px;
     font-size: 14px;
-  }
-
-  .icon-box {
-    width: 40px;
-    height: 40px;
-    font-size: 20px;
   }
 }
 </style>
@@ -164,7 +150,6 @@ h1 {
   <p class="subtitle">نسعد بخدمتكم</p>
 
   <div class="links-container">
-
     <a href="https://www.albarkah.org/profile-request/" target="_blank" class="link">
       <div class="icon-box">📝</div>
       <div class="text">طلب تسجيل مستفيد جديد</div>
@@ -174,8 +159,8 @@ h1 {
       <div class="icon-box">📄</div>
       <div class="text">طريقة استخراج الوثائق</div>
     </a>
-
   </div>
+
 </div>
 
 </body>
