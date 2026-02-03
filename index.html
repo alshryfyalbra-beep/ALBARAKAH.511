@@ -35,7 +35,7 @@
   }
 
   .logo {
-    width: 120px;
+    width: 120px;  /* حجم أصغر للكمبيوتر */
     height: 120px;
     border-radius: 50%;
     background: #ffffff; /* خلفية بيضاء للشعار */
@@ -115,7 +115,7 @@
     .container { max-width: 100%; padding: 30px 20px; }
     h1 { font-size: 24px; }
     .link { padding: 16px 18px; font-size: 15px; }
-    .logo { width: 100px; height: 100px; }
+    .logo { width: 100px; height: 100px; } /* حجم أصغر للجوال */
   }
 </style>
 </head>
