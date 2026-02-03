@@ -36,23 +36,23 @@ html, body {
   text-align: center;
 }
 
-/* ===== الشعار ===== */
+/* ===== الشعار (صغير جدًا) ===== */
 .logo {
-  width: 90px;
-  height: 90px;
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
   background: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 22px;
-  padding: 8px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  margin-bottom: 16px;
+  padding: 6px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
 }
 
 .logo img {
-  width: 85%;
-  height: 85%;
+  width: 80%;
+  height: 80%;
   object-fit: contain;
 }
 
@@ -67,7 +67,7 @@ h1 {
 .subtitle {
   font-size: 14px;
   color: rgba(255,255,255,0.85);
-  margin-bottom: 36px;
+  margin-bottom: 34px;
   font-weight: 400;
 }
 
@@ -125,8 +125,8 @@ h1 {
   }
 
   .logo {
-    width: 75px;
-    height: 75px;
+    width: 56px;
+    height: 56px;
   }
 
   h1 {
@@ -135,7 +135,7 @@ h1 {
 
   .subtitle {
     font-size: 13px;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
   }
 
   .link {
