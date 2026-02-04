@@ -36,29 +36,20 @@ html, body {
   text-align: center;
 }
 
-/* ===== إطار الشعار ===== */
+/* ===== إطار الشعار (بدون دائرة) ===== */
 .logo {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
+  width: 150px;
+  padding: 14px;
   background: rgba(255,255,255,0.95);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border-radius: 18px; /* <-- هنا الحل */
   margin-bottom: 18px;
-  border: 1px solid rgba(0,0,0,0.06);
-  box-shadow: 0 3px 10px rgba(0,0,0,0.12);
-
-  /* الحل هنا 👇 */
-  padding: 8px;
-  box-sizing: border-box;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
 
-/* ===== صورة الشعار (بدون قص) ===== */
+/* ===== صورة الشعار (حرّة تمامًا) ===== */
 .logo img {
-  width: 65%;
+  width: 100%;
   height: auto;
-  object-fit: contain;
   display: block;
 }
 
@@ -123,12 +114,7 @@ h1 {
 /* ===== الجوال ===== */
 @media (max-width: 480px) {
   .logo {
-    width: 80px;
-    height: 80px;
-  }
-
-  .logo img {
-    width: 70%;
+    width: 130px;
   }
 
   h1 {
