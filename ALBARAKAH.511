@@ -36,21 +36,19 @@ html, body {
   text-align: center;
 }
 
-/* ===== إطار الشعار (أبيض خفيف جدًا) ===== */
 .logo {
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  background: rgba(255,255,255,0.95); /* أخف */
+  background: rgba(255,255,255,0.95);
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 18px;
-  border: 1px solid rgba(0,0,0,0.06); /* إطار نحيف جدًا */
+  border: 1px solid rgba(0,0,0,0.06);
   box-shadow: 0 3px 10px rgba(0,0,0,0.12);
 }
 
-/* ===== الشعار نفسه (مصغّر وغير مقصوص) ===== */
 .logo img {
   width: 50%;
   height: auto;
@@ -58,7 +56,6 @@ html, body {
   display: block;
 }
 
-/* ===== العناوين ===== */
 h1 {
   font-size: 26px;
   color: #ffffff;
@@ -72,7 +69,6 @@ h1 {
   margin-bottom: 34px;
 }
 
-/* ===== الروابط ===== */
 .links-container {
   display: flex;
   flex-direction: column;
@@ -116,12 +112,10 @@ h1 {
   text-align: right;
 }
 
-/* ===== الجوال ===== */
 @media (max-width: 480px) {
   .logo {
     width: 80px;
     height: 80px;
-    border-width: 1px;
   }
 
   .logo img {
@@ -152,11 +146,19 @@ h1 {
   <p class="subtitle">نسعد بخدمتكم</p>
 
   <div class="links-container">
+    <!-- تسجيل مستفيد -->
     <a href="https://www.albarkah.org/profile-request/" target="_blank" class="link">
       <div class="icon-box">📝</div>
       <div class="text">طلب تسجيل مستفيد جديد</div>
     </a>
 
+    <!-- الوثائق المطلوبة (الجديدة) -->
+    <a href="https://drive.google.com/file/d/1Tzi0WiJOHCvCbsUh0VcZzYguRqG-pjYk/view?usp=drivesdk" target="_blank" class="link">
+      <div class="icon-box">📂</div>
+      <div class="text">الوثائق المطلوبة</div>
+    </a>
+
+    <!-- طريقة استخراج الوثائق -->
     <a href="https://drive.google.com/file/d/1CgMJ3AX6PQDpAaiRRuirkCuKBSAeJ9t-/view" target="_blank" class="link">
       <div class="icon-box">📄</div>
       <div class="text">طريقة استخراج الوثائق</div>
