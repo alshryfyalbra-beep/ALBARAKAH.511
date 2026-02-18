@@ -18,11 +18,10 @@ html, body {
   justify-content: center;
   align-items: center;
 }
-
 .container {
   width: 90%;
   max-width: 360px;
-  min-height: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,105 +35,24 @@ html, body {
   text-align: center;
 }
 
-/* ===== إطار الشعار (أبيض خفيف جدًا) ===== */
 .logo {
-  width: 110px;              /* زود الحجم */
-  height: 110px;
-  border-radius: 50%;
-  background: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 120px;
   margin-bottom: 18px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-  padding: 12px;             /* مساحة داخلية تمنع القص */
 }
 
 .logo img {
   width: 100%;
-  height: 100%;
-  object-fit: contain;       /* يمنع القص */
+  height: auto;
+  display: block;
 }
 
-/* ===== العناوين ===== */
-h1 {
-  font-size: 26px;
-  color: #ffffff;
-  font-weight: 700;
-  margin: 0 0 8px 0;
-}
-
-.subtitle {
-  font-size: 14px;
-  color: rgba(255,255,255,0.85);
-  margin-bottom: 34px;
-}
-
-/* ===== الروابط ===== */
-.links-container {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  width: 100%;
-}
-
-.link {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  padding: 18px 20px;
-  border-radius: 16px;
-  font-size: 16px;
-  font-weight: 500;
-  text-decoration: none;
-  color: #ffffff;
-  background: rgba(255,255,255,0.15);
-  border: 1px solid rgba(255,255,255,0.2);
-  transition: all 0.3s ease;
-}
-
-.link:hover {
-  background: rgba(255,255,255,0.25);
-  transform: translateY(-3px);
-}
-
-.icon-box {
-  width: 44px;
-  height: 44px;
-  background: rgba(255,255,255,0.25);
-  border-radius: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 22px;
-}
-
-.text {
-  flex: 1;
-  text-align: right;
-}
-
-/* ===== الجوال ===== */
+/* الجوال */
 @media (max-width: 480px) {
-  .logo {
-    width: 80px;
-    height: 80px;
-    border-width: 1px;
-  }
-
-  .logo img {
-    width: 60%;
-  }
-
-  h1 {
-    font-size: 22px;
-  }
-
-  .link {
-    padding: 15px 16px;
-    font-size: 14px;
-  }
+  .logo { width: 95px; }     /* فقط تصغير بسيط */
+  h1 { font-size: 22px; }
+  .link { padding: 15px 16px; font-size: 14px; }
 }
+
 </style>
 </head>
 
