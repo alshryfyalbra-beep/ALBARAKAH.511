@@ -38,24 +38,22 @@ html, body {
 
 /* ===== إطار الشعار (أبيض خفيف جدًا) ===== */
 .logo {
-  width: 90px;
-  height: 90px;
+  width: 110px;              /* زود الحجم */
+  height: 110px;
   border-radius: 50%;
-  background: rgba(255,255,255,0.95); /* أخف */
+  background: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 18px;
-  border: 1px solid rgba(0,0,0,0.06); /* إطار نحيف جدًا */
-  box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  padding: 12px;             /* مساحة داخلية تمنع القص */
 }
 
-/* ===== الشعار نفسه (مصغّر وغير مقصوص) ===== */
 .logo img {
-  width: 50%;
-  height: auto;
-  object-fit: contain;
-  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;       /* يمنع القص */
 }
 
 /* ===== العناوين ===== */
