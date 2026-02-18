@@ -145,7 +145,7 @@ h1 {
 <div class="container">
 
   <div class="logo">
-    <img src="https://i.ibb.co/qMStJd7d/logo.png" alt="جمعية البركة الخيرية">
+    <img src="https://i.ibb.co/CKqrJ7Qr/cover.png" alt="جمعية البركة الخيرية">
   </div>
 
   <h1>جمعية البركة الخيرية</h1>
