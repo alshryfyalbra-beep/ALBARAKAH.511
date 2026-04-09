@@ -146,23 +146,22 @@ h1 {
   <p class="subtitle">نسعد بخدمتكم</p>
 
   <div class="links-container">
-    <!-- تسجيل مستفيد -->
+    
     <a href="https://www.albarkah.org/profile-request/" target="_blank" class="link">
       <div class="icon-box">📝</div>
       <div class="text">طلب تسجيل مستفيد جديد</div>
     </a>
 
-    <!-- الوثائق المطلوبة (الجديدة) -->
     <a href="https://drive.google.com/file/d/1-Ziyteb_n3ZjyRUOkC5SLXHTKVDJjzBM/view?usp=sharing" target="_blank" class="link">
       <div class="icon-box">📂</div>
       <div class="text">الوثائق المطلوبة</div>
     </a>
 
-    <!-- طريقة استخراج الوثائق -->
-    <a href="https://drive.google.com/file/d/1CgMJ3AX6PQDpAaiRRuirkCuKBSAeJ9t-/view" target="_blank" class="link">
+    <a href="https://albarakah-my.sharepoint.com/:b:/g/personal/a_alsharifi_albarakah_org_sa/IQAz4iTed_FqQpmgCfSrGJaGAWYypU2FffwE97hhhGNqxrA?e=IPno7U" target="_blank" class="link">
       <div class="icon-box">📄</div>
       <div class="text">طريقة استخراج الوثائق</div>
     </a>
+
   </div>
 
 </div>
