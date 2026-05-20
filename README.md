@@ -13,7 +13,16 @@ html, body {
   padding: 0;
   height: 100%;
   font-family: 'Tajawal', 'Segoe UI', system-ui, sans-serif;
-  background: linear-gradient(135deg, #ffffff 0%, #f7f7f7 50%, #ececec 100%);
+
+  /* الخلفية */
+  background: linear-gradient(
+    135deg,
+    #ffffff 0%,
+    #eefaf7 30%,
+    #cdece5 70%,
+    #a7ddd2 100%
+  );
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,26 +36,45 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   padding: 40px 20px;
-  background: rgba(255,255,255,0.88);
+
+  /* اللوحة الوسطى */
+  background: linear-gradient(
+    135deg,
+    rgba(255,255,255,0.96) 0%,
+    rgba(223,245,239,0.96) 45%,
+    rgba(171,223,210,0.96) 100%
+  );
+
   border-radius: 24px;
-  backdrop-filter: blur(14px);
+
+  backdrop-filter: blur(12px);
+
   border: 1px solid rgba(0,0,0,0.05);
-  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+
+  box-shadow: 0 18px 45px rgba(0,0,0,0.08);
+
   text-align: center;
 }
 
 .logo {
   width: 90px;
   height: 90px;
+
   border-radius: 50%;
+
   background: #ffffff;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
   margin-bottom: 18px;
-  border: 1px solid rgba(0,0,0,0.06);
-  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+
+  border: 1px solid rgba(0,0,0,0.05);
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
 }
 
 .logo img {
@@ -58,14 +86,14 @@ html, body {
 
 h1 {
   font-size: 26px;
-  color: #1a1a1a;
+  color: #0f3f3f;
   font-weight: 700;
   margin: 0 0 8px 0;
 }
 
 .subtitle {
   font-size: 14px;
-  color: #666666;
+  color: #466666;
   margin-bottom: 34px;
 }
 
@@ -80,33 +108,63 @@ h1 {
   display: flex;
   align-items: center;
   gap: 14px;
+
   padding: 18px 20px;
+
   border-radius: 16px;
+
   font-size: 16px;
   font-weight: 500;
   text-decoration: none;
-  color: #1b1b1b;
-  background: rgba(255,255,255,0.85);
-  border: 1px solid rgba(0,0,0,0.06);
+
+  color: #154949;
+
+  /* الأزرار */
+  background: linear-gradient(
+    135deg,
+    rgba(255,255,255,0.98) 0%,
+    rgba(214,242,234,0.98) 100%
+  );
+
+  border: 1px solid rgba(0,0,0,0.05);
+
   transition: all 0.3s ease;
+
   box-shadow: 0 4px 12px rgba(0,0,0,0.04);
 }
 
 .link:hover {
-  background: #ffffff;
   transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+
+  /* Hover */
+  background: linear-gradient(
+    135deg,
+    rgba(255,255,255,1) 0%,
+    rgba(186,232,220,1) 100%
+  );
+
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
 }
 
 .icon-box {
   width: 44px;
   height: 44px;
-  background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+
+  /* الأيقونات */
+  background: linear-gradient(
+    135deg,
+    #ffffff 0%,
+    #bfe7dc 100%
+  );
+
   border-radius: 12px;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
   font-size: 22px;
+
   border: 1px solid rgba(0,0,0,0.05);
 }
 
@@ -116,6 +174,7 @@ h1 {
 }
 
 @media (max-width: 480px) {
+
   .logo {
     width: 80px;
     height: 80px;
@@ -146,10 +205,13 @@ h1 {
   </div>
 
   <h1>جمعية البركة الخيرية</h1>
-  <p class="subtitle">نسعد بخدمتكم</p>
+
+  <p class="subtitle">
+    نسعد بخدمتكم
+  </p>
 
   <div class="links-container">
-    
+
     <a href="https://www.albarkah.org/profile-request/" target="_blank" class="link">
       <div class="icon-box">📝</div>
       <div class="text">طلب تسجيل مستفيد جديد</div>
