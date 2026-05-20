@@ -8,19 +8,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
 
 <style>
+
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
+  min-height: 100vh;
   font-family: 'Tajawal', 'Segoe UI', system-ui, sans-serif;
 
-  /* الخلفية */
   background: linear-gradient(
     135deg,
     #ffffff 0%,
-    #eefaf7 30%,
-    #cdece5 70%,
-    #a7ddd2 100%
+    #dff4ee 30%,
+    #8fd1c1 70%,
+    #016b6b 100%
   );
 
   display: flex;
@@ -29,9 +29,10 @@ html, body {
 }
 
 .container {
+
   width: 90%;
   max-width: 360px;
-  min-height: 100%;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -39,69 +40,68 @@ html, body {
 
   padding: 40px 20px;
 
-  /* اللوحة الوسطى */
   background: linear-gradient(
     135deg,
-    rgba(255,255,255,0.96) 0%,
-    rgba(223,245,239,0.96) 45%,
-    rgba(171,223,210,0.96) 100%
+    rgba(255,255,255,0.97) 0%,
+    rgba(209,240,232,0.96) 45%,
+    rgba(78,180,160,0.95) 100%
   );
 
-  border-radius: 24px;
+  border-radius: 28px;
 
-  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.35);
 
-  border: 1px solid rgba(0,0,0,0.05);
+  backdrop-filter: blur(16px);
 
-  box-shadow: 0 18px 45px rgba(0,0,0,0.08);
+  box-shadow:
+    0 20px 50px rgba(0,0,0,0.10),
+    inset 0 1px 0 rgba(255,255,255,0.4);
 
   text-align: center;
 }
 
 .logo {
-  width: 90px;
-  height: 90px;
-
+  width: 95px;
+  height: 95px;
   border-radius: 50%;
-
   background: #ffffff;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 
   border: 1px solid rgba(0,0,0,0.05);
 
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  box-shadow:
+    0 10px 25px rgba(0,0,0,0.08),
+    inset 0 1px 0 rgba(255,255,255,0.6);
 }
 
 .logo img {
-  width: 50%;
-  height: auto;
+  width: 52%;
   object-fit: contain;
-  display: block;
 }
 
 h1 {
-  font-size: 26px;
-  color: #0f3f3f;
+  font-size: 30px;
   font-weight: 700;
-  margin: 0 0 8px 0;
+  margin: 0 0 10px 0;
+  color: #014848;
 }
 
 .subtitle {
-  font-size: 14px;
-  color: #466666;
-  margin-bottom: 34px;
+  font-size: 15px;
+  margin-bottom: 36px;
+  color: #2f6660;
 }
 
 .links-container {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  width: 100%;
+  gap: 18px;
 }
 
 .link {
@@ -110,54 +110,43 @@ h1 {
   gap: 14px;
 
   padding: 18px 20px;
+  border-radius: 18px;
 
-  border-radius: 16px;
-
-  font-size: 16px;
-  font-weight: 500;
   text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
 
-  color: #154949;
+  color: #014848;
 
-  /* الأزرار */
   background: linear-gradient(
     135deg,
     rgba(255,255,255,0.98) 0%,
-    rgba(214,242,234,0.98) 100%
+    rgba(185,230,220,0.98) 100%
   );
 
-  border: 1px solid rgba(0,0,0,0.05);
+  border: 1px solid rgba(255,255,255,0.35);
+
+  box-shadow:
+    0 8px 20px rgba(0,0,0,0.06),
+    inset 0 1px 0 rgba(255,255,255,0.4);
 
   transition: all 0.3s ease;
-
-  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
 }
 
 .link:hover {
-  transform: translateY(-3px);
-
-  /* Hover */
+  transform: translateY(-4px);
   background: linear-gradient(
     135deg,
     rgba(255,255,255,1) 0%,
-    rgba(186,232,220,1) 100%
+    rgba(120,205,188,1) 100%
   );
-
-  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.10);
 }
 
 .icon-box {
-  width: 44px;
-  height: 44px;
-
-  /* الأيقونات */
-  background: linear-gradient(
-    135deg,
-    #ffffff 0%,
-    #bfe7dc 100%
-  );
-
-  border-radius: 12px;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
 
   display: flex;
   justify-content: center;
@@ -165,7 +154,15 @@ h1 {
 
   font-size: 22px;
 
-  border: 1px solid rgba(0,0,0,0.05);
+  background: linear-gradient(
+    135deg,
+    #ffffff 0%,
+    #7fd2be 100%
+  );
+
+  border: 1px solid rgba(255,255,255,0.4);
+
+  box-shadow: 0 6px 14px rgba(0,0,0,0.06);
 }
 
 .text {
@@ -175,24 +172,30 @@ h1 {
 
 @media (max-width: 480px) {
 
-  .logo {
-    width: 80px;
-    height: 80px;
-  }
-
-  .logo img {
-    width: 60%;
+  .container {
+    padding: 35px 18px;
   }
 
   h1 {
-    font-size: 22px;
+    font-size: 25px;
+  }
+
+  .subtitle {
+    font-size: 14px;
   }
 
   .link {
-    padding: 15px 16px;
+    padding: 16px;
     font-size: 14px;
   }
+
+  .icon-box {
+    width: 44px;
+    height: 44px;
+    font-size: 20px;
+  }
 }
+
 </style>
 </head>
 
@@ -206,9 +209,7 @@ h1 {
 
   <h1>جمعية البركة الخيرية</h1>
 
-  <p class="subtitle">
-    نسعد بخدمتكم
-  </p>
+  <p class="subtitle">نسعد بخدمتكم</p>
 
   <div class="links-container">
 
