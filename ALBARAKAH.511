@@ -28,11 +28,13 @@ html, body {
   justify-content: center;
   align-items: center;
   padding: 40px 20px;
-  background: rgba(255,255,255,0.88);
+
+  /* اللوحة الخضراء */
+  background: linear-gradient(135deg, #016b6b 0%, #028484 50%, #04a3a3 100%);
+
   border-radius: 24px;
-  backdrop-filter: blur(14px);
-  border: 1px solid rgba(0,0,0,0.05);
-  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
   text-align: center;
 }
 
@@ -46,7 +48,7 @@ html, body {
   align-items: center;
   margin-bottom: 18px;
   border: 1px solid rgba(0,0,0,0.06);
-  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.10);
 }
 
 .logo img {
@@ -58,14 +60,14 @@ html, body {
 
 h1 {
   font-size: 26px;
-  color: #1a1a1a;
+  color: #ffffff;
   font-weight: 700;
   margin: 0 0 8px 0;
 }
 
 .subtitle {
   font-size: 14px;
-  color: #666666;
+  color: rgba(255,255,255,0.85);
   margin-bottom: 34px;
 }
 
@@ -85,29 +87,32 @@ h1 {
   font-size: 16px;
   font-weight: 500;
   text-decoration: none;
-  color: #1b1b1b;
-  background: rgba(255,255,255,0.85);
-  border: 1px solid rgba(0,0,0,0.06);
+  color: #ffffff;
+
+  background: rgba(255,255,255,0.12);
+
+  border: 1px solid rgba(255,255,255,0.18);
   transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+  backdrop-filter: blur(8px);
 }
 
 .link:hover {
-  background: #ffffff;
+  background: rgba(255,255,255,0.22);
   transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
 .icon-box {
   width: 44px;
   height: 44px;
-  background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+
+  background: rgba(255,255,255,0.18);
+
   border-radius: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 22px;
-  border: 1px solid rgba(0,0,0,0.05);
+  border: 1px solid rgba(255,255,255,0.15);
 }
 
 .text {
