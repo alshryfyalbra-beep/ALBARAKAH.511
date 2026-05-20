@@ -9,6 +9,7 @@
 
 <style>
 
+/* الخلفية أصبحت أنعم */
 html, body {
   margin: 0;
   padding: 0;
@@ -18,9 +19,9 @@ html, body {
   background: linear-gradient(
     135deg,
     #ffffff 0%,
-    #dff4ee 30%,
-    #8fd1c1 70%,
-    #016b6b 100%
+    #e8f7f2 30%,
+    #9fd8c9 70%,
+    #0b6b6b 100%
   );
 
   display: flex;
@@ -28,7 +29,7 @@ html, body {
   align-items: center;
 }
 
-/* container */
+/* اللوح (انسيابي بدون قطع) */
 .container {
   width: 90%;
   max-width: 360px;
@@ -41,22 +42,26 @@ html, body {
 
   background: linear-gradient(
     135deg,
-    rgba(255,255,255,0.97) 0%,
-    rgba(209,240,232,0.96) 45%,
-    rgba(78,180,160,0.95) 100%
+    rgba(255,255,255,0.75) 0%,
+    rgba(209,240,232,0.65) 50%,
+    rgba(78,180,160,0.55) 100%
   );
 
-  border-radius: 28px;
-  border: 1px solid rgba(255,255,255,0.35);
+  border-radius: 30px;
 
-  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,0.25);
 
-  box-shadow: 0 20px 50px rgba(0,0,0,0.10);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  box-shadow:
+    0 25px 60px rgba(0,0,0,0.08),
+    inset 0 1px 0 rgba(255,255,255,0.5);
 
   text-align: center;
 }
 
-/* الدائرة (كما هي) */
+/* الشعار */
 .logo {
   width: 65px;
   height: 65px;
@@ -76,7 +81,6 @@ html, body {
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
-/* الشعار داخل الدائرة (تم التصغير هنا فقط) */
 .logo img {
   width: 60%;
   height: 60%;
@@ -192,7 +196,6 @@ h1 {
 
 <div class="container">
 
-  <!-- الشعار -->
   <div class="logo">
     <img src="https://i.ibb.co/3mPcxTvg/cropped-917d57b8-a368-4791-bb0e-5b8d3bb3a9ff-1.png" alt="جمعية البركة الخيرية">
   </div>
