@@ -1,228 +1,308 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>جمعية البركة الخيرية</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <title>جمعية البركة الخيرية</title>
 
-<style>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap"
+    rel="stylesheet"
+  >
 
-/* الخلفية أصبحت أنعم */
-html, body {
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  font-family: 'Tajawal', system-ui, sans-serif;
+  <style>
 
-  background: linear-gradient(
-    135deg,
-    #ffffff 0%,
-    #e8f7f2 30%,
-    #9fd8c9 70%,
-    #0b6b6b 100%
-  );
+    * {
+      box-sizing: border-box;
+    }
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+    }
 
-/* اللوح (انسيابي بدون قطع) */
-.container {
-  width: 90%;
-  max-width: 360px;
+    body {
+      font-family: 'Tajawal', system-ui, sans-serif;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-  padding: 40px 20px;
+      padding: 20px;
 
-  background: linear-gradient(
-    135deg,
-    rgba(255,255,255,0.75) 0%,
-    rgba(209,240,232,0.65) 50%,
-    rgba(78,180,160,0.55) 100%
-  );
+      background:
+        linear-gradient(
+          135deg,
+          #ffffff 0%,
+          #e8f7f2 30%,
+          #9fd8c9 70%,
+          #0b6b6b 100%
+        );
+    }
 
-  border-radius: 30px;
+    .container {
+      width: 100%;
+      max-width: 360px;
 
-  border: 1px solid rgba(255,255,255,0.25);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+      padding: 40px 20px;
 
-  box-shadow:
-    0 25px 60px rgba(0,0,0,0.08),
-    inset 0 1px 0 rgba(255,255,255,0.5);
+      text-align: center;
 
-  text-align: center;
-}
+      background:
+        linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.75) 0%,
+          rgba(209, 240, 232, 0.65) 50%,
+          rgba(78, 180, 160, 0.55) 100%
+        );
 
-/* الشعار */
-.logo {
-  width: 65px;
-  height: 65px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 30px;
 
-  border-radius: 50%;
-  background: #fff;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+      box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    }
 
-  margin-bottom: 20px;
+    .logo {
+      width: 65px;
+      height: 65px;
 
-  overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-  border: 1px solid rgba(0,0,0,0.05);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-}
+      margin-bottom: 20px;
 
-.logo img {
-  width: 60%;
-  height: 60%;
-  object-fit: contain;
-}
+      overflow: hidden;
 
-/* العنوان */
-h1 {
-  font-size: 30px;
-  font-weight: 700;
-  margin: 0 0 10px 0;
-  color: #014848;
-}
+      background: #ffffff;
 
-/* النص */
-.subtitle {
-  font-size: 15px;
-  margin-bottom: 36px;
-  color: #2f6660;
-}
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      border-radius: 50%;
 
-/* الروابط */
-.links-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    }
 
-.link {
-  display: flex;
-  align-items: center;
-  gap: 14px;
+    .logo img {
+      width: 60%;
+      height: 60%;
 
-  padding: 18px 20px;
-  border-radius: 18px;
+      object-fit: contain;
+    }
 
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 600;
+    h1 {
+      margin: 0 0 10px;
 
-  color: #014848;
+      color: #014848;
 
-  background: linear-gradient(135deg,#fff,#b9e6dc);
+      font-size: 30px;
+      font-weight: 700;
+    }
 
-  border: 1px solid rgba(255,255,255,0.35);
+    .subtitle {
+      margin: 0 0 36px;
 
-  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+      color: #2f6660;
 
-  transition: all 0.3s ease;
-}
+      font-size: 15px;
+    }
 
-.link:hover {
-  transform: translateY(-4px);
-  background: linear-gradient(135deg,#fff,#78cdbc);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.10);
-}
+    .links-container {
+      width: 100%;
 
-/* الأيقونات */
-.icon-box {
-  width: 48px;
-  height: 48px;
-  border-radius: 14px;
+      display: flex;
+      flex-direction: column;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+      gap: 18px;
+    }
 
-  font-size: 22px;
+    .link {
+      width: 100%;
 
-  background: linear-gradient(135deg,#fff,#7fd2be);
+      display: flex;
+      align-items: center;
 
-  border: 1px solid rgba(255,255,255,0.4);
+      gap: 14px;
 
-  box-shadow: 0 6px 14px rgba(0,0,0,0.06);
-}
+      padding: 18px 20px;
 
-.text {
-  flex: 1;
-  text-align: right;
-}
+      color: #014848;
 
-/* موبايل */
-@media (max-width: 480px) {
-  .container {
-    padding: 35px 18px;
-  }
+      font-size: 16px;
+      font-weight: 600;
 
-  h1 {
-    font-size: 25px;
-  }
+      text-decoration: none;
 
-  .subtitle {
-    font-size: 14px;
-  }
+      background:
+        linear-gradient(
+          135deg,
+          #ffffff,
+          #b9e6dc
+        );
 
-  .link {
-    padding: 16px;
-    font-size: 14px;
-  }
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      border-radius: 18px;
 
-  .icon-box {
-    width: 44px;
-    height: 44px;
-    font-size: 20px;
-  }
-}
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
 
-</style>
+      transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+    }
+
+    .link:hover {
+      transform: translateY(-4px);
+
+      background:
+        linear-gradient(
+          135deg,
+          #ffffff,
+          #78cdbc
+        );
+
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.10);
+    }
+
+    .link:active {
+      transform: scale(0.98);
+    }
+
+    .icon-box {
+      width: 48px;
+      height: 48px;
+
+      flex-shrink: 0;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-size: 22px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #ffffff,
+          #7fd2be
+        );
+
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      border-radius: 14px;
+
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
+    }
+
+    .text {
+      flex: 1;
+      text-align: right;
+    }
+
+    @media (max-width: 480px) {
+
+      body {
+        padding: 16px;
+      }
+
+      .container {
+        padding: 35px 18px;
+      }
+
+      h1 {
+        font-size: 25px;
+      }
+
+      .subtitle {
+        font-size: 14px;
+      }
+
+      .link {
+        padding: 16px;
+        font-size: 14px;
+      }
+
+      .icon-box {
+        width: 44px;
+        height: 44px;
+        font-size: 20px;
+      }
+
+    }
+
+  </style>
 </head>
 
 <body>
 
-<div class="container">
+  <main class="container">
 
-  <div class="logo">
-    <img src="https://i.ibb.co/3mPcxTvg/cropped-917d57b8-a368-4791-bb0e-5b8d3bb3a9ff-1.png" alt="جمعية البركة الخيرية">
-  </div>
+    <div class="logo">
+      <img
+        src="https://i.ibb.co/3mPcxTvg/cropped-917d57b8-a368-4791-bb0e-5b8d3bb3a9ff-1.png"
+        alt="شعار جمعية البركة الخيرية"
+      >
+    </div>
 
-  <h1>جمعية البركة الخيرية</h1>
-  <p class="subtitle">نسعد بخدمتكم</p>
+    <h1>جمعية البركة الخيرية</h1>
 
-  <div class="links-container">
+    <p class="subtitle">
+      نسعد بخدمتكم
+    </p>
 
-    <a href="https://www.albarkah.org/profile-request/" target="_blank" class="link">
-      <div class="icon-box">📝</div>
-      <div class="text">طلب تسجيل مستفيد جديد</div>
-    </a>
+    <div class="links-container">
 
-    <a href="https://drive.google.com/file/d/1tgM7nlYtHCm0S_j5wWIDAik38PAKVcFA/view?usp=drive_link">
-      <div class="icon-box">📂</div>
-      <div class="text">الوثائق المطلوبة</div>
-    </a>
+      <a
+        href="https://www.albarkah.org/profile-request/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="link"
+      >
+        <div class="icon-box">📝</div>
+        <div class="text">
+          طلب تسجيل مستفيد جديد
+        </div>
+      </a>
 
-    <a href="https://drive.google.com/file/d/1_ZSpfIPCoW8fTtFj7DSJyESUs5hqRsrP/view" target="_blank" class="link">
-      <div class="icon-box">📄</div>
-      <div class="text">طريقة استخراج الوثائق</div>
-    </a>
+      <a
+        href="https://drive.google.com/file/d/1tgM7nlYtHCm0S_j5wWIDAik38PAKVcFA/view?usp=drive_link"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="link"
+      >
+        <div class="icon-box">📂</div>
+        <div class="text">
+          الوثائق المطلوبة
+        </div>
+      </a>
 
-  </div>
+      <a
+        href="https://drive.google.com/file/d/1_ZSpfIPCoW8fTtFj7DSJyESUs5hqRsrP/view"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="link"
+      >
+        <div class="icon-box">📄</div>
+        <div class="text">
+          طريقة استخراج الوثائق
+        </div>
+      </a>
 
-</div>
+    </div>
+
+  </main>
 
 </body>
+
 </html>
