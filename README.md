@@ -210,7 +210,7 @@ h1 {
       <div class="text">طلب تسجيل مستفيد جديد</div>
     </a>
 
-    <a href="https://drive.google.com/file/d/1-Ziyteb_n3ZjyRUOkC5SLXHTKVDJjzBM/view" target="_blank" class="link">
+    <a href="https://drive.google.com/file/d/1tgM7nlYtHCm0S_j5wWIDAik38PAKVcFA/view?usp=drive_link">
       <div class="icon-box">📂</div>
       <div class="text">الوثائق المطلوبة</div>
     </a>
